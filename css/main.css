@@ -1,0 +1,154 @@
+@font-face{
+    font-family: "Mohave";
+    src: url('/Resources/Fonts/Mohave.otf');
+}
+
+@font-face{
+    font-family: "Mohave";
+    src: url('/Resources/Fonts/Mohave-SemiBold.otf');
+    font-weight: bold;
+}
+@media (min-width: 1200px) {
+    .container{
+        max-width: 970px;
+    }
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+.topimg {
+    background: url(/mountains.jpg) no-repeat center center fixed;
+    background-size: cover;
+    -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+    background-attachment: scroll;
+}
+
+
+
+.setback {
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.25);
+
+}
+
+.title {              
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+  top: 50%;
+    transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+
+
+}
+
+body 
+{
+    background: url(/Resources/cream_pixels.png);
+    font-family: 'Open Sans';
+    
+}
+
+.container {
+    line-height: 2;
+}
+
+.header {
+    font-family: "Mohave", "Oswald", sans-serif;
+    font-weight: bold;
+    color: rgb(205, 15, 22);
+    font-size: 3em;
+}
+
+@media screen and (max-width: 768px) {
+       .header {
+    font-size:2.5em;
+    }
+}
+
+.aboutMe, .social {
+    background: white;
+}
+
+.container {
+    padding: 30px;
+}
+
+
+
+h3 {
+  font-size: 1em;
+}
+
+
+
+/*Credit to Geoff Graham: http://geoffgraham.me/css-bar-chart-using-html5-progress/ for the Skills bar below*/
+progress, progress[role] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border: none;
+  background-size: auto;
+  height: 3em;
+  width: 100%;
+}
+
+.skill-list {
+  list-style: none;
+  margin: 0;
+  padding: 1em;
+}
+
+.skill {
+  margin-bottom: 1em;
+  position: relative;
+    
+
+}
+.skill h3 {
+  color: #fff;
+  left: 1em;
+  line-height: 0.5em;
+  position: absolute;
+  text-shadow: 1px 1px #000;
+
+}
+.skill ::-webkit-progress-value {
+  -webkit-animation: bar-fill 5s;
+  width: 0px;
+}
+
+.skill-1::-webkit-progress-value, .skill-2::-webkit-progress-value, .skill-3::-webkit-progress-value, .skill-4::-webkit-progress-value, .skill-5::-webkit-progress-value, .skill-6::-webkit-progress-value, .skill-7::-webkit-progress-value, .skill-8::-webkit-progress-value, .skill-9::-webkit-progress-value {
+  background: #2e6171;
+}
+
+.skill-1::-moz-progress-bar, .skill-2::-moz-progress-bar, .skill-3::-moz-progress-bar, .skill-4::-moz-progress-bar, .skill-5::-moz-progress-bar, .skill-6::-moz-progress-bar, .skill-7::-moz-progress-bar, .skill-8::-moz-progress-bar, .skill-9::-moz-progress-bar {
+  background: #2e6171;
+}
+
+.skill ::-webkit-progress-bar {
+  background-color: rgb(157, 159, 160);
+}
+.skill ::-moz-progress-bar {
+  background-color: rgb(157, 159, 160);
+}
+
+
+@-webkit-keyframes bar-fill {
+  0% {
+    width: 0;
+  }
+}
+@keyframes bar-fill {
+  0% {
+    width: 0;
+  }
+}
+
+
+
